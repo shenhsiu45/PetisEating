@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    font-family: 'freeman', cursive, 'Noto Sans TC', sans-serif;
+    font-family: 'freeman', sans-serif, 'Noto Sans TC', sans-serif;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -27,7 +27,7 @@ canvas {
 .sidebar {
     position: fixed; /* 固定在螢幕左側 */
     top: 0; /* 距離頂部 0 像素 */
-    left: 0; /* 距離左側 0 像素 */
+    right: 0; /* 距離左側 0 像素 */
     width: 200px; /* 寬度 200 像素 */
     height: 100%; /* 高度 100% */
     background-color: #F9E9C8; /* 背景顏色為 #F9E9C8 */
@@ -52,7 +52,7 @@ canvas {
     font-size: 24px;
     position: absolute; /* 使用绝对定位 */
     top: 30%; /* 距离顶部10像素 */
-    left: 20%; /* 距离左侧10像素 */
+    left: 15%; /* 距离左侧10像素 */
     background-color: transparent; /* 背景色透明 */
     color: #000000;
     border-radius: 15px; /* 设置圆角半径为15像素 */
