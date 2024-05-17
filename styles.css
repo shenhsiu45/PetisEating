@@ -25,15 +25,15 @@ canvas {
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #F9E9C8;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
+    position: fixed; /* 固定在螢幕左側 */
+    top: 0; /* 距離頂部 0 像素 */
+    left: 0; /* 距離左側 0 像素 */
+    width: 200px; /* 寬度 200 像素 */
+    height: 100%; /* 高度 100% */
+    background-color: #F9E9C8; /* 背景顏色為 #F9E9C8 */
+    padding: 20px; /* 內邊距 20 像素 */
+    box-sizing: border-box; /* 設置 box-sizing 屬性為 border-box */
+    overflow-y: auto; /* 垂直方向上出現滾動條 */
 }
 
 .animal {
@@ -52,7 +52,7 @@ canvas {
     font-size: 24px;
     position: absolute; /* 使用绝对定位 */
     top: 30%; /* 距离顶部10像素 */
-    right: 20%; /* 距离右侧10像素 */
+    left: 20%; /* 距离左侧10像素 */
     background-color: transparent; /* 背景色透明 */
     color: #000000;
     border-radius: 15px; /* 设置圆角半径为15像素 */
