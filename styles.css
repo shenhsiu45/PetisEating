@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #F7DCB9;
+}
+
+canvas {
+    border: 10px solid #DEAC80;
+    background-color: #FFF;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #F9E9C8;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.animal {
+    margin-bottom: 20px;
+}
+
+.animal img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+#startButton {
+    font-size: 24px;
+    position: absolute; /* 使用绝对定位 */
+    top: 30%; /* 距离顶部10像素 */
+    right: 20%; /* 距离右侧10像素 */
+    background-color: transparent; /* 背景色透明 */
+    color: #000000;
+    border-radius: 15px; /* 设置圆角半径为15像素 */
+    padding: 10px 20px; /* 设置按钮内边距 */
+}
