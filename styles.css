@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Noto+Sans+TC:wght@400;700&display=swap');
+
 body {
     display: flex;
     justify-content: center;
@@ -5,6 +7,16 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #F7DCB9;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive, 'Noto Sans TC', sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #333;
 }
 
 canvas {
@@ -21,9 +33,11 @@ canvas {
     background-color: #F9E9C8;
     padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .animal {
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -33,6 +47,7 @@ canvas {
     margin-right: 10px;
     vertical-align: middle;
 }
+
 #startButton {
     font-size: 24px;
     position: absolute; /* 使用绝对定位 */
@@ -42,4 +57,10 @@ canvas {
     color: #000000;
     border-radius: 15px; /* 设置圆角半径为15像素 */
     padding: 10px 20px; /* 设置按钮内边距 */
+}
+
+#snakeStyle {
+    position: absolute;
+    top: 50px;
+    left: 150px;
 }

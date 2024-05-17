@@ -5,28 +5,11 @@
     <title>PetisEating寵物進食中</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* 在這裡添加內嵌CSS樣式 */
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Noto+Sans+TC:wght@400;700&display=swap');
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            font-family: 'Pacifico', cursive, 'Noto Sans TC', sans-serif;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 24px;
-            color: #333;
-        }
-        .sidebar {
-            margin-top: 70px; /* 確保sidebar不會與標題重疊 */
-        }
     </style>
 </head>
 <body>
-    <h1>PetisEating寵物進食中</h1>
+    <h1>PetisEating 寵物進食中</h1>
     <canvas id="gameCanvas" width="600" height="500"></canvas>
     <select id="snakeStyle">
         <option value="https://raw.githubusercontent.com/shenhsiu45/My-web/main/img/01waterpig/">水豚君</option>
@@ -43,8 +26,6 @@
         <option value="https://raw.githubusercontent.com/shenhsiu45/My-web/main/img/12dragon/">龍</option>
         <option value="https://raw.githubusercontent.com/shenhsiu45/My-web/main/img/13penguin/">企鵝</option>
         <option value="https://raw.githubusercontent.com/shenhsiu45/My-web/main/img/14nemo/">尼莫</option>
-        <option value="https://raw.githubusercontent.com/shenhsiu45/My-web/main/img/15hotdog/">熱狗</option>
-        <!-- 在這裡添加更多動物選項 -->
     </select>
     <button id="startButton">Start</button>
     
@@ -105,13 +86,8 @@
             <img src="https://raw.githubusercontent.com/shenhsiu45/My-web/main/img/14nemo/head.png" alt="尼莫">
             尼莫
         </div>
-        <div class="animal">
-            <img src="https://raw.githubusercontent.com/shenhsiu45/My-web/main/img/15hotdog/head.png" alt="熱狗">
-            熱狗
-        </div>
-        <!-- 在這裡添加更多動物示意圖 -->
-    </div>    
-    
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
