@@ -42,6 +42,7 @@ let gameLoop;
 ctx.font = '30px Arial';
 ctx.fillStyle = 'black';
 ctx.fillText('請點擊Start即可開始', canvas.width / 3.5, canvas.height / 2);
+
 function drawGame() {
     clearScreen();
     if (!gameOver) {
@@ -51,15 +52,13 @@ function drawGame() {
         checkFoodCollision();
         drawScore();
         // 设置定时器并保存返回值
-        gameLoop = setTimeout(drawGame, 10000 / 120);
+        gameLoop = setTimeout(drawGame, 1000 / 12); // 调整速度为每秒12帧
     } else {
         ctx.font = '30px Arial';
         ctx.fillStyle = 'black';
         ctx.fillText('遊戲結束，按空白鍵重新開始', canvas.width / 4.5, canvas.height / 2);
     }
 }
-
-
 
 function clearScreen() {
     ctx.fillStyle = 'white';
@@ -154,15 +153,15 @@ function keyDown(event) {
 }
 
 function restartGame(event) {
-    console.log("Restart function called.");
-    if ((gameOver && (event.code === "Space" || event.target === canvas || event.target.id === "startButton"))) {
-        console.log("Restart conditions met.");
+    if (gameOver && (event.code === "Space" || event.target === canvas || event.target.id === "startButton")) {
         headX = canvas.width / 2;
         headY = canvas.height / 2;
         snakeParts.length = 0;
         tailLength = 2;
         gameOver = false;
         score = 0;
+        speedX = snakeSize;
+        speedY = 0;
         generateFood();
         // 清除之前的定时器
         clearTimeout(gameLoop);
@@ -170,7 +169,6 @@ function restartGame(event) {
         drawGame();
     }
 }
-
 
 function drawScore() {
     ctx.font = '20px Arial';
@@ -181,8 +179,12 @@ function drawScore() {
 document.getElementById('startButton').addEventListener('click', startGame);
 
 function startGame() {
-    generateFood();
-    drawGame();
+    if (gameOver) {
+        restartGame({ target: { id: 'startButton' } });
+    } else {
+        generateFood();
+        drawGame();
+    }
 }
 
 let touchStartX = 0;
