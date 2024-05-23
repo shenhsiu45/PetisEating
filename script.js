@@ -41,7 +41,7 @@ let gameLoop;
 // 在游戏循环开始前绘制开始提示
 ctx.font = '30px Arial';
 ctx.fillStyle = 'black';
-ctx.fillText('請點擊Start即可開始', canvas.width / 3.5, canvas.height / 2);
+ctx.fillText('請點擊START即可開始', canvas.width / 3.5, canvas.height / 2);
 
 function drawGame() {
     clearScreen();
@@ -56,7 +56,7 @@ function drawGame() {
     } else {
         ctx.font = '30px Arial';
         ctx.fillStyle = 'black';
-        ctx.fillText('遊戲結束，按空白鍵重新開始', canvas.width / 4.5, canvas.height / 2);
+        ctx.fillText('遊戲結束，按空白鍵或START重新開始', canvas.width / 12, canvas.height / 2);
     }
 }
 
