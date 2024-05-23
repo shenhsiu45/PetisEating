@@ -38,6 +38,10 @@ window.addEventListener("keyup", restartGame);
 
 let gameLoop;
 
+// 在游戏循环开始前绘制开始提示
+ctx.font = '30px Arial';
+ctx.fillStyle = 'black';
+ctx.fillText('請點擊Start即可開始', canvas.width / 3.5, canvas.height / 2);
 function drawGame() {
     clearScreen();
     if (!gameOver) {
@@ -55,11 +59,6 @@ function drawGame() {
     }
 }
 
-
-// 在游戏循环开始前绘制开始提示
-ctx.font = '30px Arial';
-ctx.fillStyle = 'black';
-ctx.fillText('請點擊Start即可開始', canvas.width / 3.5, canvas.height / 2);
 
 
 function clearScreen() {
