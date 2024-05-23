@@ -51,7 +51,7 @@ canvas {
 #startButton {
     font-size: 24px;
     position: absolute; /* 使用绝对定位 */
-    top: 10%; /* 距离顶部10像素 */
+    top: 5%; /* 距离顶部10像素 */
     left: 30%; /* 距离左侧10像素 */
     background-color: transparent; /* 背景色透明 */
     color: #000000;
@@ -61,6 +61,6 @@ canvas {
 
 #snakeStyle {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
 }
